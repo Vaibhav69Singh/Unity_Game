@@ -15,4 +15,8 @@ public class CoinCounter : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        
+    }
 }
