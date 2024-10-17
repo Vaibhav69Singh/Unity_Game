@@ -203,8 +203,8 @@ GameObject:
   - component: {fileID: 298422958}
   - component: {fileID: 298422960}
   m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -596,7 +596,7 @@ Animator:
   m_GameObject: {fileID: 567482516}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0667540b761cd6e4384ccfb0bd56381a, type: 2}
+  m_Controller: {fileID: 9100000, guid: fcc01171c18466a4993efc6eb95c84cc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
