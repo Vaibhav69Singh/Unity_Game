@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField]private float speed;
     private BoxCollider2D boxCollider;
+    
     private void Awake()
     {
         //Grab refrences
@@ -32,23 +33,20 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-1.5f,1.5f,1);
         }
 
-        if (Input.GetKey(KeyCode.Space) && isGrounded())
+        //jump function hai
+        if (Input.GetKey(KeyCode.Space) &&  isGrounded())
             Jump();
 
         //set animation 
         anim.SetBool("run",horizontalInput !=0); // check whether there is a horizontal input or not
         anim.SetBool("grounded", isGrounded());
+
     }
 
     private void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, speed);
         anim.SetTrigger("jump");
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
         
     }
 
