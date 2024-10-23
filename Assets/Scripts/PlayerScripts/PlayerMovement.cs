@@ -36,6 +36,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) &&  isGrounded())
             Jump();
 
+        //rolling 
+        if (Input.GetKey(KeyCode.LeftControl) && isGrounded())
+            Roll();
+
         //set animation 
         anim.SetBool("run",horizontalInput !=0); // check whether there is a horizontal input or not
         anim.SetBool("grounded", isGrounded());
@@ -54,6 +58,27 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size,0,Vector2.down,0.1f,groundLayer); 
         return raycastHit.collider != null;
     }
-
     
+    private void Roll()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        if (horizontalInput > 0.01f )
+        {
+            body.velocity = new Vector2(speed, body.velocity.y);
+            anim.SetTrigger("roll");
+            anim.SetBool("rolling", true);
+        }
+        else if (horizontalInput < -0.01f )
+        {
+            body.velocity = new Vector2(-speed, body.velocity.y);
+            anim.SetTrigger("roll");
+            anim.SetBool("rolling", true);
+
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime>= 1.0f && !anim.IsInTransition(0))
+        {
+            anim.SetBool("rolling", false);
+        }
+    }
 }
