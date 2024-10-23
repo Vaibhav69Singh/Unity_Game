@@ -36,9 +36,14 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) &&  isGrounded())
             Jump();
 
+
         //rolling 
         if (Input.GetKey(KeyCode.LeftControl) && isGrounded())
             Roll();
+            
+        
+
+            
 
         //set animation 
         anim.SetBool("run",horizontalInput !=0); // check whether there is a horizontal input or not
@@ -66,19 +71,13 @@ public class PlayerMovement : MonoBehaviour
         {
             body.velocity = new Vector2(speed, body.velocity.y);
             anim.SetTrigger("roll");
-            anim.SetBool("rolling", true);
+            
         }
         else if (horizontalInput < -0.01f )
         {
             body.velocity = new Vector2(-speed, body.velocity.y);
-            anim.SetTrigger("roll");
-            anim.SetBool("rolling", true);
-
+            anim.SetTrigger("roll");           
         }
-
-        if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime>= 1.0f && !anim.IsInTransition(0))
-        {
-            anim.SetBool("rolling", false);
-        }
+        
     }
 }
