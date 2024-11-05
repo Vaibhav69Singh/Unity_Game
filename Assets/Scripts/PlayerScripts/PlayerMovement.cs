@@ -41,7 +41,8 @@ public class PlayerMovement : MonoBehaviour
         //rolling 
         if (Input.GetKey(KeyCode.LeftControl) && IsGrounded() && !isRolling)
             Roll();
-            
+
+
 
         //set animation 
         anim.SetBool("run",horizontalInput !=0); // check whether there is a horizontal input or not
@@ -84,4 +85,6 @@ public class PlayerMovement : MonoBehaviour
     {
         isRolling = false;
     }
+
+   
 }
