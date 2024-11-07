@@ -12,11 +12,12 @@ public class PlayerCombat : MonoBehaviour
             Attack();
         }
     }
-    public void Attack()
+    private void Attack()
     {
         //play attack animation
         anim.SetTrigger("attack");
         //detect enemies in the range of attack
         //damage the enemy
     }
+
 }
