@@ -1304,7 +1304,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.914133, y: 1.3099995, z: -10}
+  m_LocalPosition: {x: -3.5246992, y: 1.2299995, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1596,7 +1596,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &567482519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1658,7 +1658,7 @@ Transform:
   m_GameObject: {fileID: 567482516}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.95, y: -5.09, z: 0}
+  m_LocalPosition: {x: -13.23, y: -5.17, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2361,7 +2361,7 @@ GameObject:
   - component: {fileID: 736118048}
   - component: {fileID: 736118050}
   - component: {fileID: 736118049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: obsticale (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3026,7 +3026,7 @@ GameObject:
   - component: {fileID: 885991156}
   - component: {fileID: 885991158}
   - component: {fileID: 885991157}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: obsticale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3440,7 +3440,7 @@ GameObject:
   - component: {fileID: 1024713174}
   - component: {fileID: 1024713176}
   - component: {fileID: 1024713175}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: obsticale (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3570,7 +3570,7 @@ GameObject:
   - component: {fileID: 1171208145}
   - component: {fileID: 1171208147}
   - component: {fileID: 1171208146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: obsticale (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4515,7 +4515,7 @@ GameObject:
   - component: {fileID: 1379489867}
   - component: {fileID: 1379489866}
   - component: {fileID: 1379489865}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: obsticale (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5035,7 +5035,7 @@ Transform:
   m_GameObject: {fileID: 1445074592}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.914133, y: 1.3099995, z: -10}
+  m_LocalPosition: {x: -3.5246992, y: 1.2299995, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5580,7 +5580,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_TargetDisplay: 0
 --- !u!224 &1690580012
 RectTransform:
