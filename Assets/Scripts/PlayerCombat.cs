@@ -8,7 +8,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
-    public EnemyHealth enemyHealth;
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Z))
