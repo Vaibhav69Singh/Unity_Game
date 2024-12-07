@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
         currHealth -= damage;
 
         //use the second if condition after adding animation
-        if (currHealth < 0) 
+        if (currHealth <= 0) 
         {
             Destroy(gameObject);
         }
