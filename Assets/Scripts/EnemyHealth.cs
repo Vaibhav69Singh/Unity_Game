@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         currHealth = maxHealth;
+        anim = GetComponent<Animator>();
     }
     
     public void TakeDamage(int damage)
@@ -17,21 +18,17 @@ public class EnemyHealth : MonoBehaviour
         currHealth -= damage;
 
         //use the second if condition after adding animation
+
         if (currHealth <= 0) 
         {
+            Die();
             Destroy(gameObject);
         }
-
-       /* if (currHealth < 0) 
-        {
-            Die();
-        }*/
     }
 
-   /* private void Die()
+    public void Die()
     {
-        Destroy(gameObject);
         anim.SetTrigger("die");
-    }*/
+    }
 
 }
