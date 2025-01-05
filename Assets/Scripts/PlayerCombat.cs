@@ -9,13 +9,21 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayers;
     public float attackRange = 0.5f;
     public int attackDamage = 20;
-    
+
+
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            Attack();
-        }
+         if (Input.GetKeyDown(KeyCode.Z))
+         {
+             Attack();
+           }
+ 
     }
     private void Attack()
     {
@@ -43,5 +51,5 @@ public class PlayerCombat : MonoBehaviour
         }
         Gizmos.DrawWireSphere(attackPoint.position , attackRange);
     }
-
+ 
 }
