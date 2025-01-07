@@ -1694,7 +1694,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6447, y: 1.1499996, z: -10}
+  m_LocalPosition: {x: -4.1254063, y: 1.1499996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1906,6 +1906,7 @@ GameObject:
   - component: {fileID: 567482518}
   - component: {fileID: 567482517}
   - component: {fileID: 567482521}
+  - component: {fileID: 567482524}
   - component: {fileID: 567482522}
   - component: {fileID: 567482523}
   m_Layer: 0
@@ -2111,6 +2112,21 @@ MonoBehaviour:
     m_Bits: 3840
   attackRange: 1.19
   attackDamage: 20
+--- !u!114 &567482524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567482516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 190b7e0e9980469429c3f77b2f57d028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currHealth: 0
+  healthBar: {fileID: 1863356882}
 --- !u!1 &619161233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5816,7 +5832,7 @@ Transform:
   m_GameObject: {fileID: 1445074592}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6447, y: 1.1499996, z: -10}
+  m_LocalPosition: {x: -4.1254063, y: 1.1499996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6174,6 +6190,7 @@ GameObject:
   - component: {fileID: 1653633353}
   - component: {fileID: 1653633352}
   - component: {fileID: 1653633356}
+  - component: {fileID: 1653633358}
   - component: {fileID: 1653633357}
   m_Layer: 8
   m_Name: Goblin
@@ -6356,6 +6373,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   currHealth: 0
+--- !u!114 &1653633358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653633351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 018abc2494dc7ab4e8fe947ad79ad7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
 --- !u!1 &1674890171
 GameObject:
   m_ObjectHideFlags: 0
